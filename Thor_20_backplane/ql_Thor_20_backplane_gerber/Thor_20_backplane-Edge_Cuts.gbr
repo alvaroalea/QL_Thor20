@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.11+1*%
+%TF.CreationDate,2024-05-02T20:53:07+02:00*%
+%TF.ProjectId,Thor_20_backplane,54686f72-5f32-4305-9f62-61636b706c61,0.1*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.11+1) date 2024-05-02 20:53:07*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X132810000Y-53467000D02*
+X242792000Y-53467000D01*
+X242792000Y-91567000D01*
+X132810000Y-91567000D01*
+X132810000Y-53467000D01*
+M02*
