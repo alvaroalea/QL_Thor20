@@ -1,4 +1,4 @@
-# QPLANE - SINCLAIR QL Backplane port expansion.
+# CST Thor - 68020 CPU Board.
 
 (C) 2023 Alvaro Alea Fernandez
 

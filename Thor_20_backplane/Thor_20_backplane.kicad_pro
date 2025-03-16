@@ -558,7 +558,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "qlexternal512kram_smd_vacio1.dsn",
-      "step": "",
+      "step": "../3D/Thor_20_backplane.step",
       "svg": "",
       "vrml": ""
     },

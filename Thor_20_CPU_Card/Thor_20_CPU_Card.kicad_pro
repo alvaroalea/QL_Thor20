@@ -506,7 +506,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../3D/Thor_20_CPU_Card.step",
       "svg": "",
       "vrml": ""
     },

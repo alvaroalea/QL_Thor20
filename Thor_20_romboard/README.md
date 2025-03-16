@@ -1,4 +1,4 @@
-# QPLANE - SINCLAIR QL Backplane port expansion.
+# CST Thor - ROM Board.
 
 (C) 2023 Alvaro Alea Fernandez
 
@@ -11,3 +11,5 @@ This board has been reverse engineered from pictures freely available on interne
 THIS BOARD HAS NOT BEEN TESTED!! Use at your own risk.
 
 This is a fast hack, not real dimension or position or tracks.
+
+![My image](Thor_20_romboard_comp.png)

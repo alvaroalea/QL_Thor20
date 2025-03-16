@@ -1,4 +1,4 @@
-# QPLANE - SINCLAIR QL Backplane port expansion.
+# CST Thor - Expansion board.
 
 (C) 2023 Alvaro Alea Fernandez
 

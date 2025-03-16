@@ -6,13 +6,13 @@
 	(paper "A3")
 	(title_block
 		(title "CST Thor  - Clone/Upgrade for Sinclair QL")
-		(date "2025-03-15")
+		(date "2025-03-16")
 		(rev "0,1")
 		(company "(C) 2025 Alvaro Alea Fdz")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.txt")
 		(comment 2 "CERN Open Hardware Licence Version 2 - Strongly Reciprocal")
 		(comment 3 "Under License")
-		(comment 4 "EXPANSION BOARD")
+		(comment 4 "ROM BOARD")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x16_Odd_Even"
@@ -3860,6 +3860,15 @@
 		(uuid "65fe7ab8-d9cb-462f-a037-afb5896aa99f")
 	)
 	(bus_entry
+		(at 290.83 96.52)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f51ba0-0031-40ce-8067-b9339aff8e37")
+	)
+	(bus_entry
 		(at 246.38 60.96)
 		(size 2.54 2.54)
 		(stroke
@@ -3905,6 +3914,15 @@
 		(uuid "7197c532-6856-488f-8e2c-63f6865a82c0")
 	)
 	(bus_entry
+		(at 335.28 91.44)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d48e21-d99b-4164-9304-b2bc44fc49ce")
+	)
+	(bus_entry
 		(at 86.36 100.33)
 		(size -2.54 -2.54)
 		(stroke
@@ -3912,6 +3930,15 @@
 			(type default)
 		)
 		(uuid "72cbb1f6-2639-4ad8-ad01-cd8e6d8e1d19")
+	)
+	(bus_entry
+		(at 246.38 96.52)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "755d7b79-6302-4d8d-bb84-34118c319690")
 	)
 	(bus_entry
 		(at 198.12 68.58)
@@ -4481,15 +4508,6 @@
 		(uuid "d42eb5d5-e4df-4a09-a2fb-e90d1073738e")
 	)
 	(bus_entry
-		(at 335.28 93.98)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6236b20-45c2-4488-a1e8-26051183df2c")
-	)
-	(bus_entry
 		(at 201.93 88.9)
 		(size 2.54 2.54)
 		(stroke
@@ -4497,15 +4515,6 @@
 			(type default)
 		)
 		(uuid "d6bd6276-e4df-4dc2-bd47-f630978fb2f2")
-	)
-	(bus_entry
-		(at 335.28 91.44)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8387ee9-ae6c-403c-a2b4-1491b9c21529")
 	)
 	(bus_entry
 		(at 287.02 63.5)
@@ -4777,6 +4786,15 @@
 		)
 		(uuid "fd4058a2-c0dc-4304-a4b4-7f8b76cc8d6d")
 	)
+	(bus_entry
+		(at 201.93 96.52)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fea6785a-cca7-4730-8789-f4137b037ae4")
+	)
 	(bus
 		(pts
 			(xy 113.03 73.66) (xy 113.03 76.2)
@@ -4786,6 +4804,16 @@
 			(type default)
 		)
 		(uuid "004b7abe-14a0-4c07-8f98-d139b75d2f19")
+	)
+	(wire
+		(pts
+			(xy 248.92 99.06) (xy 256.54 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0152bdd5-dd9a-4f84-9bd6-1f78114491a3")
 	)
 	(wire
 		(pts
@@ -5789,7 +5817,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 109.22) (xy 255.27 109.22)
+			(xy 245.11 109.22) (xy 256.54 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6307,6 +6335,16 @@
 		)
 		(uuid "75fcdd8f-fa82-46dc-a197-ff83417e0251")
 	)
+	(bus
+		(pts
+			(xy 290.83 93.98) (xy 290.83 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76ee9511-0525-4a1f-a52c-5c2806389102")
+	)
 	(wire
 		(pts
 			(xy 276.86 81.28) (xy 284.48 81.28)
@@ -6436,6 +6474,16 @@
 			(type default)
 		)
 		(uuid "80efbbef-685d-4b4b-ac42-cf472780268c")
+	)
+	(wire
+		(pts
+			(xy 204.47 99.06) (xy 212.09 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8105eeb5-68d1-4b6b-8fe5-7b95aef64a3f")
 	)
 	(bus
 		(pts
@@ -6957,6 +7005,16 @@
 		)
 		(uuid "a1b9c46d-250a-4c4e-85b5-b96dea6c9d53")
 	)
+	(bus
+		(pts
+			(xy 201.93 93.98) (xy 201.93 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21bde54-a406-46ca-a734-6bafcfe732d9")
+	)
 	(wire
 		(pts
 			(xy 29.21 77.47) (xy 58.42 77.47)
@@ -7136,6 +7194,16 @@
 			(type default)
 		)
 		(uuid "af6486fe-33a5-4247-8afe-af5e59a26040")
+	)
+	(bus
+		(pts
+			(xy 246.38 93.98) (xy 246.38 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afac852d-319a-4ab7-81a7-b87ee09edf58")
 	)
 	(wire
 		(pts
@@ -7689,16 +7757,6 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 96.52) (xy 345.44 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3444976-c3e5-4583-aa61-ad4a6ad16995")
-	)
-	(wire
-		(pts
 			(xy 248.92 68.58) (xy 256.54 68.58)
 		)
 		(stroke
@@ -7746,16 +7804,6 @@
 			(type default)
 		)
 		(uuid "d59adab3-b5a4-4c60-87bc-85f1820c7f3b")
-	)
-	(bus
-		(pts
-			(xy 335.28 91.44) (xy 335.28 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d69ebe72-ccd4-4123-bb42-049db86254a5")
 	)
 	(bus
 		(pts
@@ -8189,6 +8237,16 @@
 	)
 	(wire
 		(pts
+			(xy 293.37 99.06) (xy 300.99 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32572d1-2225-4012-ba9b-7059f2d327cc")
+	)
+	(wire
+		(pts
 			(xy 71.12 100.33) (xy 73.66 100.33)
 		)
 		(stroke
@@ -8507,6 +8565,16 @@
 		)
 		(uuid "153dd333-6009-410e-acdf-d7b4fa0b8514")
 	)
+	(label "A14"
+		(at 295.91 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1655509e-65c4-4557-8b4e-505e7fe307d2")
+	)
 	(label "A4"
 		(at 297.18 73.66 0)
 		(effects
@@ -8567,7 +8635,7 @@
 		)
 		(uuid "28bbc234-e7f3-467e-a487-8566ed5c14a6")
 	)
-	(label "NS1"
+	(label "NS2"
 		(at 248.92 106.68 0)
 		(effects
 			(font
@@ -8598,7 +8666,7 @@
 		(uuid "2a3a7afb-b036-41d2-a3e5-172d9c86895e")
 	)
 	(label "A15'"
-		(at 247.65 109.22 0)
+		(at 248.92 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8717,7 +8785,7 @@
 		)
 		(uuid "3c1ee8f0-a577-42d1-bf10-633346eff848")
 	)
-	(label "NS1"
+	(label "NS3"
 		(at 293.37 106.68 0)
 		(effects
 			(font
@@ -9028,16 +9096,6 @@
 		(uuid "5e3545ce-04e1-47df-9055-7f249323c18f")
 	)
 	(label "A13"
-		(at 340.36 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f3d6198-bf7d-49c9-9b19-e73f637a928f")
-	)
-	(label "A13"
 		(at 295.91 96.52 0)
 		(effects
 			(font
@@ -9056,6 +9114,16 @@
 			(justify left bottom)
 		)
 		(uuid "6121f251-ab78-406a-a2ae-324b146062c0")
+	)
+	(label "A14"
+		(at 251.46 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "61d1f65f-e89b-481f-9caf-6a54acf1b04f")
 	)
 	(label "A13"
 		(at 251.46 96.52 0)
@@ -9076,6 +9144,16 @@
 			(justify right bottom)
 		)
 		(uuid "66d552d4-0239-4a61-bfe6-0e03116661b1")
+	)
+	(label "A14"
+		(at 207.01 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6796ec97-b198-43ea-9047-417194be6409")
 	)
 	(label "A3"
 		(at 341.63 71.12 0)
@@ -9717,7 +9795,7 @@
 		)
 		(uuid "c05b3249-a5b8-433f-9d73-6d25692c6e84")
 	)
-	(label "NS1"
+	(label "NS3"
 		(at 337.82 104.14 0)
 		(effects
 			(font
@@ -9847,7 +9925,7 @@
 		)
 		(uuid "d91bfc59-7d9a-49fe-ba9d-292c61dc94fd")
 	)
-	(label "NS1"
+	(label "NS2"
 		(at 204.47 106.68 0)
 		(effects
 			(font

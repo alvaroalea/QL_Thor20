@@ -1,4 +1,4 @@
-# THOR 20 PC Computer (Compatible with Sinclair Ql)
+# THOR PC Computer (Compatible with Sinclair Ql)
 A reverse engineering exercice using the Sinclair QL compatible Thor-20 Computer as target
 
 Licensed under Cern OHL-S - https://ohwr.org/cern_ohl_s_v2.txt
