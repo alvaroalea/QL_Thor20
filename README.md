@@ -8,7 +8,7 @@ This is not a functional item, it's only a exercice of reverse engineering to re
 
 ## History
 
-With the end of the compercial life of the Sinclair QL, other companies fill the gap, CST made create several models of the Thor computer.
+With the end of the comercial life of the Sinclair QL, other companies fill the gap, CST create several models of the Thor computer.
 
 The subject of this project is a interesting one, using old stock of original QL boards, and a re-edition of several of the previous expansion board together with a fancy desktop case to make a enhaced QL Computer, so the Thor consist of:
 
@@ -22,7 +22,7 @@ The subject of this project is a interesting one, using old stock of original QL
 - A upgraded in-box power supply
 - Standar PC XT Interface
 
-This was called Thor PC, Thor 1 or Thor 8, depend of the sources of information, there are 3 version available, 1F, 2F, 2WF depend on the number of floppys and Winchister hard disc or not.
+This was called Thor PC, Thor 1 or Thor 8, depend of the sources of information, there are 3 version available, 1F, 2F, 2WF depend on the number of floppys and Winchister hard disc or not, 1F,2F do not incorporate the IC of the SCSI interface, but can be upgraded later.
 
 Later, CST upgrade it and made the Thor 20 and Thor 21, this was Thor 1 with a CPU-Addon card, that include a 68020 CPU at 12 or 16Mhz, and a 68881 FPU math coprocesor.
 
@@ -43,3 +43,20 @@ Internally a power supply rated to 30W is used for the system. it provide:
 - -12Vdc probably at 250mA (for the serial ports of the QL)
 
 a MeanWell PT-45A is probably the good replacement ( https://www.meanwell-web.com/en-gb/ac-dc-triple-output-open-frame-power-supply-output-pt--45a ).
+
+### SCSI Upgrade Kit
+To upgrade the Thor 1F or 2F to 2WF a kit of IC11,IC12,IC13 and IC15 can be installed to enable the SCSI interface.
+
+### Memory Mapping
+
+- 0000-0048 Sinclair QL ROM
+- 0049-0064 Free for ROM Cartridge Slot
+- 0065-0096 Internal 32Kb I/O
+- 0097-0128 Free but reserved for I/O
+- 0129-0256 Internal QL 128K RAM including Video ram
+- 0257-0768 CST 512 Kb Expansion RAM
+- 0769-0832 Free 64Kb for external expansion interfaces
+- 0833-0999 5x32Kb + 1x8Kb expasion ROM
+- 1000-1024 CST Expansion I/O
+
+

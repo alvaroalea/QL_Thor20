@@ -17,7 +17,7 @@ This is a fast hack, not real dimension or position or tracks.
 ## Technical Details
 
 The board has space for 6 IC Eprom Memories.
-The schematic depend on 2 lines of selection, one is A15 or /A15, and the other come from IC5  and decode the A16,A17 lines, that mean that is targeted for the 6 32Kb IC, (type 27C256) and probably used the 0xB0000 to 0xFFFFF leaving the 0xA0000 to 0xAFFFF empty to be used by the expansion slot on the back of the computer.
+The schematic depend on 2 lines of selection, one is A15 or /A15, and the other come from IC5  and decode the A16,A17 lines, that mean that is targeted for the 6 32Kb IC, (type 27C256) and will use the 0xB0000 to 0xF8FFF leaving the 0xA0000 to 0xAFFFF empty to be used by the expansion slot on the back of the computer. in any case 0xF9000 to 0xFFFFF (last 24kb of memory) is reserved for I/O
 
 Complete decode of the memory space depend of pin 13 of IC4 (BLK0) a programable GAL, so it's unknow.
 
