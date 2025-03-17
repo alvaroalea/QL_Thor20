@@ -32,3 +32,14 @@ Unfortunately, the use of the original QL board, and the RAM in 8bits, cause thi
 
 I will try to recreate all the hardware, and document in a proper way everything I can get of the Thor Computer, up to day there is only some low resolution pictures, a bad scanned service manual, and a dump of some of the ROMs of the computer.
 
+## Technical Information
+
+### Power Supply
+The thor 20 come with a IEC C13 socket in the back, and a secondary C14 (for the monitor) a switch shall power on/off both the computer and monitor.
+
+Internally a power supply rated to 30W is used for the system. it provide:
+- +5Vdc probably at 3A (for everything)
+- +12Vdc probably at 1A (for QL, hard disc and floppy)
+- -12Vdc probably at 250mA (for the serial ports of the QL)
+
+a MeanWell PT-45A is probably the good replacement ( https://www.meanwell-web.com/en-gb/ac-dc-triple-output-open-frame-power-supply-output-pt--45a ).
