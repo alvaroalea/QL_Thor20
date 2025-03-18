@@ -432,13 +432,13 @@
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
+      "footprint_link_issues": "ignore",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
-      "lib_symbol_issues": "warning",
+      "lib_symbol_issues": "ignore",
       "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
@@ -713,20 +713,36 @@
       "Root"
     ],
     [
+      "2b4f1d30-ebb3-4b3b-95c5-02ca88ad69d9",
+      "Power Distribution"
+    ],
+    [
+      "b077834e-7ee5-4f63-afe4-4162f1dcbe0a",
+      "Expansion Slots"
+    ],
+    [
       "3d18ca47-b912-4275-b812-de015d7fe56b",
       "Memory"
+    ],
+    [
+      "ee4427c0-a8a6-4267-a821-647dafcb81c6",
+      "Glue Logic"
+    ],
+    [
+      "be7b68b4-108b-4398-886d-9a20ca0d0d87",
+      "Printer and Mouse Interfaces"
+    ],
+    [
+      "a89399f3-2be2-4f5f-b1a4-1e166f0fae9f",
+      "Keyboard and RTC Interface"
     ],
     [
       "15e541fe-c516-430b-a5ed-b3d69c9890fe",
       "discs interfaces"
     ],
     [
-      "be7b68b4-108b-4398-886d-9a20ca0d0d87",
-      "Periferics"
-    ],
-    [
-      "ee4427c0-a8a6-4267-a821-647dafcb81c6",
-      "Glue Logic"
+      "2a29d751-7cf0-475f-afa2-ef236fbc1d4f",
+      "SCSI Interface"
     ]
   ],
   "text_variables": {}
