@@ -9223,12 +9223,6 @@
 		(uuid "41eee5ac-24fa-416f-85ec-c12830456a01")
 	)
 	(junction
-		(at 359.41 195.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4297008c-1a34-412e-9fed-fac625a57b8f")
-	)
-	(junction
 		(at 354.33 238.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9603,6 +9597,10 @@
 		(uuid "2bda7d4d-e9ab-42cb-9a44-2905004f8484")
 	)
 	(no_connect
+		(at 66.04 237.49)
+		(uuid "3307fafb-31ef-4fa5-aa99-5ba4e4dc4fc7")
+	)
+	(no_connect
 		(at 219.71 91.44)
 		(uuid "3fc2d079-fd3c-405e-b4ec-8d00f1af57fb")
 	)
@@ -9617,10 +9615,6 @@
 	(no_connect
 		(at 168.91 69.85)
 		(uuid "533e489a-dbf6-41fd-bbc6-6a5af06b6929")
-	)
-	(no_connect
-		(at 260.35 96.52)
-		(uuid "5991e7a9-295e-4870-b3ec-d4e5b60e87b2")
 	)
 	(no_connect
 		(at 219.71 99.06)
@@ -10474,15 +10468,6 @@
 		(uuid "8855e70e-412f-4919-97a2-bab928474cd8")
 	)
 	(bus_entry
-		(at 247.65 57.15)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8931e73a-5043-4d92-8874-13643b92449d")
-	)
-	(bus_entry
 		(at 240.03 132.08)
 		(size -2.54 2.54)
 		(stroke
@@ -10877,15 +10862,6 @@
 			(type default)
 		)
 		(uuid "deea9660-abe6-49b4-a704-95e379b1584c")
-	)
-	(bus_entry
-		(at 16.51 240.03)
-		(size 2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df29b4d6-ab34-4bec-b274-326d96cb4c1c")
 	)
 	(bus_entry
 		(at 92.71 58.42)
@@ -11450,7 +11426,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 193.04) (xy 363.22 193.04)
+			(xy 351.79 193.04) (xy 365.76 193.04)
 		)
 		(stroke
 			(width 0)
@@ -11857,16 +11833,6 @@
 			(type default)
 		)
 		(uuid "2348419d-f0ff-4fd8-a37f-003734aa999a")
-	)
-	(wire
-		(pts
-			(xy 19.05 237.49) (xy 50.8 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23c7b204-6a13-462a-9e34-c343651e87de")
 	)
 	(wire
 		(pts
@@ -12418,16 +12384,6 @@
 		)
 		(uuid "3c683468-e45c-47bb-971f-762ad1f86ab9")
 	)
-	(bus
-		(pts
-			(xy 16.51 240.03) (xy 16.51 245.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c70bc2a-01d7-4c83-8747-f9404761fa3f")
-	)
 	(wire
 		(pts
 			(xy 219.71 185.42) (xy 237.49 185.42)
@@ -12510,13 +12466,13 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 200.66) (xy 359.41 195.58)
+			(xy 365.76 193.04) (xy 365.76 200.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3fc57c66-13eb-4b43-80d7-7dc724066d9e")
+		(uuid "40f56f46-264d-4280-b33e-5c5b124c9b2b")
 	)
 	(bus
 		(pts
@@ -12887,16 +12843,6 @@
 			(type default)
 		)
 		(uuid "539e7935-4336-4aeb-8861-b1debcb721f1")
-	)
-	(wire
-		(pts
-			(xy 66.04 237.49) (xy 83.82 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "545c8930-9733-42b8-a6ae-1f556a3167dc")
 	)
 	(wire
 		(pts
@@ -13990,7 +13936,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 200.66) (xy 359.41 200.66)
+			(xy 351.79 200.66) (xy 365.76 200.66)
 		)
 		(stroke
 			(width 0)
@@ -14100,7 +14046,7 @@
 	)
 	(bus
 		(pts
-			(xy 16.51 187.96) (xy 16.51 240.03)
+			(xy 16.51 187.96) (xy 16.51 245.11)
 		)
 		(stroke
 			(width 0)
@@ -15228,16 +15174,6 @@
 		)
 		(uuid "c4f924bf-47a9-4565-ab8d-49e5259dbf12")
 	)
-	(wire
-		(pts
-			(xy 250.19 59.69) (xy 260.35 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c557b826-f5ca-4f5d-9da0-d883bfb82274")
-	)
 	(bus
 		(pts
 			(xy 240.03 190.5) (xy 240.03 187.96)
@@ -15300,7 +15236,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 195.58) (xy 359.41 195.58)
+			(xy 351.79 195.58) (xy 363.22 195.58)
 		)
 		(stroke
 			(width 0)
@@ -15347,16 +15283,6 @@
 			(type default)
 		)
 		(uuid "ca896788-1cc4-43fc-988f-f9b679d2effb")
-	)
-	(bus
-		(pts
-			(xy 247.65 54.61) (xy 247.65 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb5e4cca-f8d5-4509-9214-10847aadbecf")
 	)
 	(wire
 		(pts
@@ -15507,16 +15433,6 @@
 			(type default)
 		)
 		(uuid "d3487cf5-d6c7-4124-a5ae-085288fca692")
-	)
-	(wire
-		(pts
-			(xy 359.41 195.58) (xy 363.22 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3493eac-b2b1-4924-9074-45e957393b09")
 	)
 	(bus
 		(pts
@@ -17158,16 +17074,6 @@
 		)
 		(uuid "4ffbcf0f-020b-41b1-92c1-83d5e5045e64")
 	)
-	(label "A0"
-		(at 255.27 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "501dac28-290e-4023-b92a-ebb74ae3fb51")
-	)
 	(label "D19"
 		(at 229.87 175.26 0)
 		(effects
@@ -17889,7 +17795,7 @@
 		(uuid "a80ec810-0d93-42d1-820e-9c2c902eddba")
 	)
 	(label "DS_68K8"
-		(at 354.33 195.58 0)
+		(at 353.06 195.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18047,16 +17953,6 @@
 			(justify right bottom)
 		)
 		(uuid "c08b1393-3f3a-4fd8-8324-cf29f5d1c9f3")
-	)
-	(label "A14"
-		(at 40.64 237.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c0ec3ef9-50d9-4f2b-b6ea-84496fc68b5d")
 	)
 	(label "CLK_68K8"
 		(at 173.99 260.35 0)
@@ -18782,6 +18678,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 50.8 237.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05d9a540-0321-496a-9d51-b3b744539833")
+		(property "Reference" "#PWR033"
+			(at 50.8 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3527c637-cf10-4b17-9487-cfe8894351b6")
+		)
+		(instances
+			(project "Thor_20_CPU_Card"
+				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 339.09 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18840,6 +18801,72 @@
 			(project "Thor_20_CPU_Card"
 				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 260.35 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07b9c77d-5b03-4398-b235-90441b6ccf4a")
+		(property "Reference" "#PWR034"
+			(at 264.16 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 256.54 59.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "614ae715-0a0f-4d04-8e8c-7a62b2b83760")
+		)
+		(instances
+			(project "Thor_20_CPU_Card"
+				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -22523,6 +22550,72 @@
 			(project "Thor_20_CPU_Card"
 				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 260.35 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73c62880-f542-4b36-be4d-f832c1cebba5")
+		(property "Reference" "#PWR035"
+			(at 264.16 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 256.54 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a28266a-7df2-4090-a5eb-f4500097e072")
+		)
+		(instances
+			(project "Thor_20_CPU_Card"
+				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
