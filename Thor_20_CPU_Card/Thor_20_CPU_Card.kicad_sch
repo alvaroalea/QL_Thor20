@@ -2460,13 +2460,12 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "8/16/32-bit Microprocessor"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "68020 Microprocessor CPU"
@@ -4194,7 +4193,7 @@
 							)
 						)
 					)
-					(number "N9"
+					(number "N10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9506,6 +9505,12 @@
 		(uuid "c53d26d0-3eca-4881-b304-51d2df0a2c74")
 	)
 	(junction
+		(at 140.97 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c705b30c-fecc-4d5a-85ff-6775545a911f")
+	)
+	(junction
 		(at 369.57 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9576,16 +9581,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbecab89-3e0c-4adf-93c7-4854536b2006")
-	)
-	(junction
-		(at 140.97 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff82ef98-7cdf-41d4-b28d-ddbb205ff860")
-	)
-	(no_connect
-		(at 168.91 74.93)
-		(uuid "0d6da400-1972-4634-9f38-26ede576b67a")
 	)
 	(no_connect
 		(at 351.79 187.96)
@@ -9688,10 +9683,6 @@
 		(uuid "b80cfbdf-c48e-4ea7-9a8c-8d3219a6d869")
 	)
 	(no_connect
-		(at 168.91 81.28)
-		(uuid "b8ab0059-fbd0-4d63-b5a9-f1bd8accd68d")
-	)
-	(no_connect
 		(at 34.29 60.96)
 		(uuid "ba39fede-a62e-46b4-a9aa-9c91aba220e2")
 	)
@@ -9734,10 +9725,6 @@
 	(no_connect
 		(at 260.35 251.46)
 		(uuid "fe0339a4-b179-4dc5-bfc9-a78526e61359")
-	)
-	(no_connect
-		(at 168.91 121.92)
-		(uuid "ff598f6f-d0f2-4e64-9a2e-88daf83f2a1f")
 	)
 	(bus_entry
 		(at 339.09 107.95)
@@ -16672,7 +16659,7 @@
 		(uuid "168c0cd4-97cb-4530-a755-26b281ff7c81")
 	)
 	(label "DSACK0"
-		(at 250.19 73.66 0)
+		(at 250.19 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16852,7 +16839,7 @@
 		(uuid "2fc1040c-12a9-4022-b70f-5847f96789bb")
 	)
 	(label "D28"
-		(at 77.47 157.48 0)
+		(at 77.47 165.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16912,7 +16899,7 @@
 		(uuid "36f44682-6d0e-487e-ad50-48fad9ac7229")
 	)
 	(label "DSACK1"
-		(at 250.19 76.2 0)
+		(at 250.19 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17042,7 +17029,7 @@
 		(uuid "417b09d8-e163-44d1-8d33-d01e518b701d")
 	)
 	(label "D29"
-		(at 77.47 160.02 0)
+		(at 77.47 152.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17072,7 +17059,7 @@
 		(uuid "447d71e6-7b65-4dca-8106-a28f6e09e114")
 	)
 	(label "D31"
-		(at 77.47 165.1 0)
+		(at 77.47 147.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17491,7 +17478,7 @@
 		)
 		(uuid "77f65d2d-dfad-4d6c-9a1e-af1cc1e7927f")
 	)
-	(label "A8"
+	(label "A0"
 		(at 44.45 162.56 0)
 		(effects
 			(font
@@ -17522,7 +17509,7 @@
 		(uuid "7ca239c0-e188-4f35-b7a4-d463ca86755f")
 	)
 	(label "D24"
-		(at 77.47 147.32 0)
+		(at 83.82 162.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17672,7 +17659,7 @@
 		(uuid "8d5fb94d-2501-4496-8cf5-d0ec16ff5edd")
 	)
 	(label "D30"
-		(at 77.47 162.56 0)
+		(at 77.47 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17862,7 +17849,7 @@
 		(uuid "a2b4aafb-6032-487d-86c6-75c1aad358f6")
 	)
 	(label "D26"
-		(at 77.47 152.4 0)
+		(at 83.82 154.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18042,7 +18029,7 @@
 		(uuid "b8e2cdb8-fbde-4bd6-850c-d80944ccade2")
 	)
 	(label "D27"
-		(at 77.47 154.94 0)
+		(at 83.82 160.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18462,7 +18449,7 @@
 		(uuid "f6e8656a-2ea2-407f-88a4-294b33bdcb04")
 	)
 	(label "D25"
-		(at 77.47 149.86 0)
+		(at 83.82 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -22071,6 +22058,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 168.91 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a1142ac-30b0-4de2-8aa9-fe64e8151c19")
+		(property "Reference" "#PWR032"
+			(at 172.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 165.1 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d7b7c60c-f71b-49bf-94eb-f855e8feff8f")
+		)
+		(instances
+			(project "Thor_20_CPU_Card"
+				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "8bits:68020RC")
 		(at 194.31 99.06 0)
 		(unit 1)
@@ -22442,7 +22495,7 @@
 		(pin "N11"
 			(uuid "49f51501-5dc9-4c95-ba7d-48a5e525f5bc")
 		)
-		(pin "N9"
+		(pin "N10"
 			(uuid "6868e6cd-0e04-43a4-8c67-aa9cf47ada1e")
 		)
 		(pin "M3"
@@ -22470,6 +22523,72 @@
 			(project "Thor_20_CPU_Card"
 				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 168.91 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "761feb94-d3a3-44ed-98ba-8e5beaacb921")
+		(property "Reference" "#PWR031"
+			(at 172.72 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 165.1 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9e5c754-c678-456f-b98e-504a9b36a3e6")
+		)
+		(instances
+			(project "Thor_20_CPU_Card"
+				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -23766,6 +23885,72 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 168.91 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acdca703-e838-4957-87f3-3d057b55432d")
+		(property "Reference" "#PWR019"
+			(at 172.72 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 165.1 121.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2c956b9d-420a-442d-83a8-6504a2e9c525")
+		)
+		(instances
+			(project "Thor_20_CPU_Card"
+				(path "/e4e6a020-6c3a-4db6-b55d-f08963715f9f"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 369.57 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24400,7 +24585,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_SIP_Split")
-		(at 140.97 110.49 0)
+		(at 148.59 110.49 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24408,7 +24594,7 @@
 		(dnp no)
 		(uuid "c2d24c96-15a3-462a-a8cf-772ec3a90c58")
 		(property "Reference" "RN1"
-			(at 138.43 113.03 90)
+			(at 146.05 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24417,7 +24603,7 @@
 			)
 		)
 		(property "Value" "R_Pack04_SIP_Split"
-			(at 113.03 111.76 0)
+			(at 117.602 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24426,7 +24612,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP8"
-			(at 138.938 110.49 90)
+			(at 146.558 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24435,7 +24621,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 140.97 110.49 0)
+			(at 148.59 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24444,7 +24630,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 110.49 0)
+			(at 148.59 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25192,7 +25378,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_SIP_Split")
-		(at 148.59 110.49 0)
+		(at 140.97 110.49 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25200,7 +25386,7 @@
 		(dnp no)
 		(uuid "eebb60f0-d924-449e-9445-f9d4a0bf63ba")
 		(property "Reference" "RN1"
-			(at 146.05 113.03 90)
+			(at 138.43 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25209,7 +25395,7 @@
 			)
 		)
 		(property "Value" "R_Pack04_SIP_Split"
-			(at 113.03 109.22 0)
+			(at 117.602 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25218,7 +25404,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP8"
-			(at 146.558 110.49 90)
+			(at 138.938 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25227,7 +25413,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 148.59 110.49 0)
+			(at 140.97 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25236,7 +25422,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 110.49 0)
+			(at 140.97 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
