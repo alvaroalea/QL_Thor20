@@ -1,0 +1,64 @@
+GAL16V8
+THORU13
+
+EN   DISC RESET A3  A4   REQ  SELTO BSY  RW   GND
+DSN  U15CE U12CE SELO ACKO HOLD GO  RDP  FDCSEL VCC
+
+; ---------------------------------------------------------------------------
+; SCSI (SASI) interface, 1F/2F option (U11, U12, U13, U15 socketed).
+;   $FFF00 (A4=0 A3=0)  data port, REQ/ACK handshake done by hardware
+;   $FFF08 (A4=0 A3=1)  write: select (ID bit on the bus, SEL until BSY)
+;                       read : status via U15 (b7=REQ b1=C/D b0=I/O, raw)
+;   $FFF10 (A4=1)       WD1772 (FDCSEL, pin 19)
+; Inputs, raw levels:
+;   DISC  HIGH = $FFF00-$FFF3F selected (74LS139 + U10)
+;   RESET LOW  = reset          DSN  LOW  = bus /DS (pin 11)
+;   REQ, BSY   SCSI bus lines, LOW = asserted
+;   SELTO HIGH = SEL asserted for more than ~0.3 ms (R2/C1, U11B): timeout
+; Outputs:
+;   U15CE, U12CE  active LOW chip enables
+;   SELO, ACKO, HOLD  active HIGH, through 74LS05 open collector to
+;                     SEL, ACK and ACK_HOLD (HOLD high = DTACK held off)
+;   GO, RDP       internal state (pins 17, 18 are not connected on the PCB)
+;   FDCSEL        HIGH = WD1772 selected. Drives U10 pin 3; R1 (1K) from
+;                 DISC keeps the floppy working when U13 is not fitted.
+; Handshake:
+;   write: wait REQ -> ACK, keep the cycle (and data) until REQ goes away
+;   read : wait REQ -> DTACK, ACK only after the CPU has latched the byte,
+;          ACK released when REQ goes away
+; ---------------------------------------------------------------------------
+
+/U15CE = DISC * /A4 * A3 * RW * /DSN
+
+/U12CE = DISC * /A4 * /A3 * /DSN
+       + DISC * /A4 * A3 * /RW * /DSN
+
+SELO = DISC * /A4 * A3 * /RW * /DSN * BSY * /SELTO * RESET
+
+GO.T = DISC * /A4 * /A3 * /DSN * /REQ * /ACKO * RESET
+     + DISC * /A4 * /A3 * /DSN * GO * RESET
+GO.E = VCC
+
+RDP.T = DISC * /A4 * /A3 * /DSN * RW * GO * RESET
+      + RDP * /REQ * RESET
+RDP.E = VCC
+
+ACKO.T = DISC * /A4 * /A3 * /DSN * /RW * GO * RESET
+       + RDP * /DISC * RESET
+       + RDP * A4 * RESET
+       + RDP * A3 * RESET
+       + RDP * DSN * RESET
+       + ACKO * /REQ * RESET
+ACKO.E = VCC
+
+HOLD = DISC * /A4 * /A3 * /DSN * /GO
+     + DISC * /A4 * /A3 * /DSN * /RW * GO * /REQ
+     + DISC * /A4 * A3 * /RW * /DSN * BSY * /SELTO
+
+FDCSEL = DISC * A4
+
+DESCRIPTION
+CST Thor 20 expansion board, U13: SCSI/SASI control and WD1772 select.
+Reconstructed from the schematic and the Thor system ROM 5.22 (see
+GAL_U4_U13.md). Not the original fuse map. Uses complex mode (feedback
+on pins 15, 17, 18).

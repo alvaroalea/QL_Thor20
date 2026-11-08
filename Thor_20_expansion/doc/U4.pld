@@ -1,0 +1,56 @@
+GAL16V8
+THORU4
+
+A0   FC0  A16  A17  A18  A19  DS   PSEL RAM  GND
+A15  BLK1 BLK0 EN   RA7  CAS1 CAS0 RAS0 RAS1 VCC
+
+; ---------------------------------------------------------------------------
+; Pin 7 (DS) is the bus /DS already inverted by U2: HIGH = data strobe active.
+; PSEL = /Q of U3A: HIGH idle (row address on the 74LS257), LOW = column.
+; RAM  =  Q of U3B: goes HIGH one half clock after PSEL goes LOW.
+;
+; Memory map (68008, 20 bit):
+;   $00000-$3FFFF  QL motherboard (not ours)
+;   $40000-$7FFFF  DRAM bank 0  U19,U21..U33  (pin 18 = /RAS, pin 17 = /CAS)
+;   $80000-$BFFFF  DRAM bank 1  U18,U20..U32  (pin 19 = /RAS, pin 16 = /CAS)
+;   $C0000-$FFFFF  BLK0: ROM board (74LS139 U5A -> NS1..NS3, NS0 free/slot)
+;   $F8000-$FFFFF  data accesses (FC0=1) -> BLK1: I/O (A8-A14 not decoded)
+;                  program fetches (FC0=0) stay in BLK0 (8K EPROM, NS3+A15)
+;
+; NOTE: the schematic net names of pins 16 and 19 are swapped (RAS2BK1 goes
+; to the /CAS pins, CAS2BK1 to the /RAS pins). The pin names used here
+; follow the real connection.
+; ---------------------------------------------------------------------------
+
+/BLK1 = DS * A19 * A18 * A17 * A16 * A15 * FC0
+
+/BLK0 = DS * A19 * A18 * /A17
+      + DS * A19 * A18 * /A16
+      + DS * A19 * A18 * /A15
+      + DS * A19 * A18 * /FC0
+
+; The board takes the cycle (QL DSMC high via Q1, U1 enabled, DTACK)
+EN = A19
+   + A18
+
+; Row (PSEL=1): A17, column (PSEL=0): A0
+RA7 = PSEL * A17
+    + /PSEL * A0
+
+; Normal access: /RAS with DS, /CAS with RAM.
+; CAS-before-RAS refresh of the bank that is NOT accessed, in every cycle
+; outside $C0000-$FFFFF (QL board cycles and cycles to the other bank).
+/RAS0 = DS * /A19 * A18
+      + RAM * /A18
+/CAS0 = RAM * /A19 * A18
+      + DS * /A18
+
+/RAS1 = DS * A19 * /A18
+      + RAM * /A19
+/CAS1 = RAM * A19 * /A18
+      + DS * /A19
+
+DESCRIPTION
+CST Thor 20 expansion board, U4: memory decoder, DRAM RAS/CAS and refresh.
+Reconstructed from the schematic and the Thor system ROM 5.22 (see
+GAL_U4_U13.md). Not the original fuse map.
